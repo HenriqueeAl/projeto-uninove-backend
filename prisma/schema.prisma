@@ -15,12 +15,14 @@ model User {
     user        String    @unique
     password    String
     balance     Float
+    lcr         Float 
+    dsp         Float
 }
 
 model Lanca {
     id          Int       @id     @default(autoincrement())
     name        String
     value       Float
-    date        String
     type        String
+    userId      String
 }
